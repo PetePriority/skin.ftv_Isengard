@@ -393,6 +393,13 @@
 						<label>$INFO[ListItem.Year]</label>
 						<visible>!IsEmpty(ListItem.Year)</visible>
 					</control>
+					<control type="image">
+						<top>2</top>
+						<width>32</width>
+						<height>24</height>
+						<texture>views/3D.png</texture>
+						<visible>ListItem.IsStereoscopic</visible>
+					</control>
 					<include>Rating_TV</include>
 					<include condition="IsEmpty(Skin.String(RatingCountry)) | Stringcompare(Skin.String(RatingCountry),US)">Rating_MPAA</include>
 					<include condition="Stringcompare(Skin.String(RatingCountry),UK)">Rating_BBFC</include>
